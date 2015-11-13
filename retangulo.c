@@ -3,10 +3,11 @@
 
 int main()
 {
-    int coluna, linha, largura, altura, s, n;
-    char nome[20], continuar[2]={'s','n'};
+    int coluna, linha, largura, altura, continuar;
+    char nome[20];
     
-    while(continuar =! 'n'){
+    continuar = 1;
+    while(continuar == 1){
     
     printf("Digite seu nome :\n");
     scanf("%s", nome);
@@ -29,13 +30,11 @@ int main()
                printf("\n");
                }
                
-    printf("Deseja continuar ? (s/n)\n");
-    scanf("%s", continuar);    
+    printf("Deseja continuar ? (1 - s/2 - n)\n");
+    scanf("%d", &continuar);    
 }   
 
     return 0;
     system("pause");
                
-}                           
-    
-    
+}           
